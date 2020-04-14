@@ -83,10 +83,9 @@ _The variables required in order for the module to be successfully called from t
 
 |**_Variable_** | **_Description_** | **_Type_** | **_Argument Status_** | **_Default Value_** |
 |:----|:----|-----:|:---:|:---:|
-| **_vpc\_id_** | _The VPC ID_ | _string_ | **_Required_** |  |
-| **_route_** | _A list of route objects_ | _any_ | **_Optional_** | **_[]_** |
-| **_propagating\_vgws_** | _A list of virtual gateways for propagation_ | _any_ | **_Optional_** | **_[]_** |
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Optional_** | **_{}_** | 
+| **_subnet\_id_** | _The subnet ID to create an association_ | _string_ | **_Optional_** | **_[]_** |
+| **_gateway\_id_** | _The gateway ID to create an association_ | _string_ | **_Optional_** | **_null_** |
+| **_route\_table\_id_** | _The ID of the routing table to associate with_ | _string_ | **_Required_** |  |
 
 
 ---
