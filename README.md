@@ -49,11 +49,8 @@ _To use this module, add the following call to your code:_
 module "route_table_association" {
   source = "git::https://github.com/nitinda/terraform-module-aws-route-table-association.git?ref=master"
   
-  vpc_id = var.vpc_id
-  tags   = {
-    Environment = "prod"
-    Project     = "POC"
-  }
+  subnet_id      = var.subnet_id
+  route_table_id = var.route_table_id
 }
 
 ```
@@ -62,14 +59,8 @@ module "route_table_association" {
 module "route_table_association" {
   source = "git::https://github.com/nitinda/terraform-module-aws-route-table-association.git?ref=master"
   
-  vpc_id = module.vpc.id  
-  tags   = merge(
-    var.common_tags,
-    {
-      Environment = "prod"
-      Name        = "route-table-association"
-    }
-  )
+  gateway_id     = var.gateway_id  
+  route_table_id = var.route_table_id
 }
 
 ```
