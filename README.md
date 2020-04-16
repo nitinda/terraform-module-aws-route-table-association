@@ -7,6 +7,7 @@ _Terraform module for AWS Route Table association between a route table and a su
 
 ![_Code : Stable_](https://img.shields.io/badge/Code-Stable-brightgreen?style=for-the-badge&logo=github)
 
+> **_This is a stable example. It should successfully build out of the box_**
 >
 
 ---
